@@ -1,0 +1,120 @@
+
+.butn{
+   background-color: rgb(34 211 238);
+   color: dark;
+}
+
+/* animation on images */
+
+
+body {
+    background: linear-gradient(45deg, #ff3366, #3333cc);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%; 
+    padding: 0; }
+
+.image-container {
+    margin-top: 20px;
+    transition: transform 0.5s ease-in-out; 
+    animation: moveUpDown 2s linear infinite; 
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+}
+
+.img-responsive {
+    max-width: 100%; 
+    height: auto; }
+
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        width: 100%; 
+        text-align: center;
+    }
+
+    .image-container {
+        margin-top: 0; 
+        transition: transform 0.5s ease-in-out;
+        transform: translateY(0); 
+    }
+
+    .col-md-6.order-md-1 {
+        order: 2;
+    }
+}
+
+
+
+
+/* animation on text  */
+
+.entrance-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 2s ease-in-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+/* About section Animations */
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+/* card animations  */
+
+
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .card-animation {
+    animation: slideInLeft 1s ease-in-out forwards;
+  }
+  
+  /* 2nd image animation */
+  
+.image-hover-animation {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-hover-animation:hover {
+    transform: scale(1.05); 
+  }
+  
